@@ -24,40 +24,39 @@ The analysis was conducted to assess the feasibility of using a logistic regress
 
 The target variable y was created from the loan_status column.
 
-
-y = lending_data["loan_status"]
+- y = lending_data["loan_status"]
 
 The feature set X was created from the remaining columns.
 
-X = lending_data.drop(columns=["loan_status"])
+- X = lending_data.drop(columns=["loan_status"])
 
 ### Splitting the Data:
 The data was split into training and testing sets using train_test_split
 
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
+- from sklearn.model_selection import train_test_split
+- X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
 
 ### 2. Model Training
 Logistic Regression:
 
 A logistic regression model was instantiated and trained using the training data.
 
-from sklearn.linear_model import LogisticRegression
-model = LogisticRegression(solver='lbfgs', random_state=1, max_iter=200)
-model.fit(X_train, y_train)
+- from sklearn.linear_model import LogisticRegression
+- model = LogisticRegression(solver='lbfgs', random_state=1, max_iter=200)
+- model.fit(X_train, y_train)
 
 ### 3. Model Evaluation
 Predictions:
 
 - Predictions were made on the testing data.
-y_pred = model.predict(X_test)
+- y_pred = model.predict(X_test)
 
 ### Performance metrics
 The model performance was evaluated using a confusion matrix and a classification report.
 
-from sklearn.metrics import confusion_matrix, classification_report
-conf_matrix = confusion_matrix(y_test, y_pred)
-class_report = classification_report(y_test, y_pred)
+- from sklearn.metrics import confusion_matrix, classification_report
+- conf_matrix = confusion_matrix(y_test, y_pred)
+- class_report = classification_report(y_test, y_pred)
 
 ### Confusion Matrix
 - [[14926    75]
