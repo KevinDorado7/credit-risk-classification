@@ -24,6 +24,7 @@ The analysis was conducted to assess the feasibility of using a logistic regress
 
 The target variable y was created from the loan_status column.
 
+
 y = lending_data["loan_status"]
 
 The feature set X was created from the remaining columns.
@@ -59,16 +60,16 @@ conf_matrix = confusion_matrix(y_test, y_pred)
 class_report = classification_report(y_test, y_pred)
 
 ### Confusion Matrix
-[[14926    75]
- [   46   461]]
+- [[14926    75]
+- [   46   461]]
 
 ### Classification Report
               precision    recall  f1-score   support
            0       1.00      1.00      1.00     15001
            1       0.86      0.91      0.88       507
     accuracy                           0.99     15508
-   macro avg       0.93      0.95      0.94     15508
-weighted avg       0.99      0.99      0.99     15508
+    macro avg      0.93      0.95      0.94     15508
+    weighted avg   0.99      0.99      0.99     15508
 
 ### 4. Analysis Summary
 
