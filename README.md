@@ -74,6 +74,8 @@ The model performance was evaluated using a confusion matrix and a classificatio
 
 The logistic regression model performed exceptionally well, with an overall accuracy of 99%. It demonstrated perfect performance in predicting healthy loans and strong performance in identifying high-risk loans. This model is recommended for use in evaluating loan applications due to its high accuracy and reliability.
 
+
+### Extra Tools Used
 In this project, I made use of the assistance of ChatGPT to help me with debugging and optimizing code functionality and with the predictions and evaluatinons of the model's performance with confusion matrix and classification report and also summarizing the report.
 
 - OpenAI. (n.d.). ChatGPT by OpenAI from https://openai.com/chatgpt
